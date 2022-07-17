@@ -1,0 +1,47 @@
+@use 'Vars';
+
+.box{
+
+    form{
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        margin-top: -2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        
+        textarea{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            resize: none;
+            box-sizing: border-box;
+            font-style: none;
+            width: 638px;
+            height: 52px;
+            padding: 16px;
+            background: Vars.$gray500;
+            border: 1px solid Vars.$gray700;
+            border-radius: 8px;
+        }
+
+        button{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            height: 52px;
+            width: 90px;
+            padding:16px;
+            border-radius: 8px;
+            background: Vars.$blueDark;
+            border-style: none;
+            color: white;
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use 'Vars';
+
+.navBar {
+    background: Vars.$gray700;
+    height: 200px;
+    width: 100%;
+    border: 0 1px solid black;
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 40px;
+            margin-left: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            color: Vars.$purpleDark;
+            
+            p {
+                
+                color: Vars.$blue;
+            }
+        }
+    }
+}
