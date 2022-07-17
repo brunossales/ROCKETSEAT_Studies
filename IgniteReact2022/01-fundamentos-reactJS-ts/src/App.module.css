@@ -1,0 +1,21 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    /* não força os dois a terem o mesmo tamanho */
+    align-items: flex-start;
+}
+
+@media(max-width: 768px) {
+    /* rem é unidade relativa de acordo com o tamanho da fonte */
+    html{
+        font-size: 87.5%;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
