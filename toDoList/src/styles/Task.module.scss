@@ -1,8 +1,80 @@
 @use 'Vars';
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.uniqueTask {
+
+    background-color: Vars.$gray500;
+    border-radius: 8px;
+    padding: 16px;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+
+        p {
+            color: Vars.$gray100;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        button {
+            background: none;
+            border: none;
+
+            svg {
+                color: Vars.$gray300;
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+                transition: color 400ms;
+            }
+        }
+
+        svg:hover {
+            color: Vars.$red;
+        }
+
+    }
+
+}
+
+.inputCheck {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid Vars.$blue;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.inputCheck:checked {
+    background-color: Vars.$purpleDark;
+    background-image: url('../img/Vector.svg');
+    background-size: cover;
+    transition: background 1s;
+    border: none;
+}
+
+.boxTask {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.boxTaskNone {
+    border-top: 1px solid Vars.$gray300;
+    border-radius: 8px;
+    color: Vars.$gray300;
+}

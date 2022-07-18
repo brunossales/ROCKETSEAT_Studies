@@ -46,12 +46,18 @@ export default function Task() {
     return count;
   }
 
+  function handleDeleteTask(id:string){
+    const tasksWithoutDeleteOne = tasks.filter((task) => {
+      return task.id != id;
+    })
+
+    setTasks(tasksWithoutDeleteOne)
+  }
+
   return (
     <div className={TaskStyle.container}>
       <div className={CreateTaskStyle.boxCreateTask}>
-        <form
-          onSubmit={handleCreateNewTask}
-        >
+        <form onSubmit={handleCreateNewTask}>
           <textarea
             placeholder="Adicionar uma nova tarefa"
             onChange={handleNewTaskChange}
@@ -65,30 +71,32 @@ export default function Task() {
         </form>
       </div>
 
-      <div className={InfTaskStyle.boxInf}>
-        <div className={InfTaskStyle.division}>
-          <h3>Tarefas Criadas</h3>
-          <p>{tasks.length}</p>
+      <div>
+        <div className={InfTaskStyle.boxInf}>
+          <div className={InfTaskStyle.division}>
+            <h3>Tarefas Criadas</h3>
+            <p>{tasks.length}</p>
+          </div>
+          <div className={InfTaskStyle.division}>
+            <h3>Tarefas Concluidas</h3>
+            <p>{counterIsCompleted()}</p>
+          </div>
         </div>
-        <div className={InfTaskStyle.division}>
-          <h3>Tarefas Concluidas</h3>
-          <p>{counterIsCompleted()}</p>
-        </div>
-      </div>
 
-      <div className={TaskStyle.boxTask}>
-        {tasks.map((task) => {
-            return(
-                <RenderTasks 
-                    id={task.id}
-                    isCompleted={task.isCompleted}
-                    value={task.value}
-                    key={task.id}
-                /> 
+        <div className={TaskStyle.boxTask}>
+          {tasks.map((task) => {
+            return (
+              <RenderTasks
+                id={task.id}
+                isCompleted={task.isCompleted}
+                value={task.value}
+                deleteTask={handleDeleteTask}
+                key={task.id}
+              />
             );
-        })}
+          })}
+        </div>
       </div>
-
     </div>
   );
 }
