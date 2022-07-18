@@ -1,12 +1,12 @@
 import Header from "./components/Header"
 import './App.scss'
-import Tasks from "./components/Tasks"
+import Task from "./components/Task"
 
 function App() {
   return (
     <div>
       <Header />
-      <Tasks />
+      <Task />
     </div>
   )
 }
