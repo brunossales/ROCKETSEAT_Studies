@@ -4,9 +4,10 @@ export interface inTask {
     isCompleted: boolean;
 }
 
-export interface inTaskDelete{
+export interface inTaskRender{
     id: string;
     value: string;
     isCompleted: boolean;
     deleteTask: (id : string) => void;
+    isChecked: (id : string) => void;
 }

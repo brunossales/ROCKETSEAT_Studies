@@ -15,9 +15,16 @@ import { inTask } from "../types/InterfaceTask";
 //npm install --save uid
 import { uid } from "uid";
 import RenderTasks from "./RenderTasks";
+import { RenderNoTasks } from "./RenderNoTasks";
 
 export default function Task() {
-  const [tasks, setTasks] = useState<inTask[]>([]);
+  const [tasks, setTasks] = useState<inTask[]>([
+    {
+      id: uid(),
+      value: "Uma tarefa para testes",
+      isCompleted: false,
+    },
+  ]);
   const [newTask, setNewTask] = useState("");
   const isNewTaskEmpty = newTask.length === 0;
 
@@ -37,21 +44,49 @@ export default function Task() {
     setTasks([...tasks, newTaskProvider]);
     setNewTask("");
   }
-  function counterIsCompleted() {
-    let count = 0;
-    tasks.forEach((task) => {
-      if (task.isCompleted) count++;
-    });
 
-    return count;
-  }
-
-  function handleDeleteTask(id:string){
+  function handleDeleteTask(id: string) {
     const tasksWithoutDeleteOne = tasks.filter((task) => {
       return task.id != id;
-    })
+    });
 
-    setTasks(tasksWithoutDeleteOne)
+    setTasks(tasksWithoutDeleteOne);
+  }
+
+  function handleCheckedTask(id: string) {
+    const tasksWithoutUpdateOne = tasks;
+    tasksWithoutUpdateOne.map((task) => {
+      if(task.id === id) {
+        const checked = task.isCompleted ? false : true;
+        task.isCompleted = checked;
+      }
+    })
+    setTasks([...tasksWithoutUpdateOne])
+  }
+
+  function countIsTrue() {
+    const tasksWithTrue = tasks.filter((task) => {
+      return task.isCompleted === true;
+    });
+    return tasksWithTrue.length;
+  }
+
+  function renderTaskorWithout() {
+    if (tasks.length === 0) return <RenderNoTasks />;
+    else {
+      return tasks.map((task) => {
+        return (
+          <RenderTasks
+            id={task.id}
+            isCompleted={task.isCompleted}
+            value={task.value}
+            deleteTask={handleDeleteTask}
+            isChecked={handleCheckedTask}
+            key={task.id}
+          />
+        );
+      });
+    }
   }
 
   return (
@@ -79,22 +114,13 @@ export default function Task() {
           </div>
           <div className={InfTaskStyle.division}>
             <h3>Tarefas Concluidas</h3>
-            <p>{counterIsCompleted()}</p>
+            <p>
+              {countIsTrue()} de {tasks.length}
+            </p>
           </div>
         </div>
-
-        <div className={TaskStyle.boxTask}>
-          {tasks.map((task) => {
-            return (
-              <RenderTasks
-                id={task.id}
-                isCompleted={task.isCompleted}
-                value={task.value}
-                deleteTask={handleDeleteTask}
-                key={task.id}
-              />
-            );
-          })}
+        <div>
+          <div className={TaskStyle.boxTask}>{renderTaskorWithout()}</div>
         </div>
       </div>
     </div>
