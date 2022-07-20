@@ -12,7 +12,7 @@
 - # NPM 
     ```bash
     # Faça o downloald do projeto no seu computador
-    $ git clone https://github.com/brunossales/WEB_2022.1
+    $ git clone https://github.com/brunossales/ROCKETSEAT_Studies
     # Entre na pasta raiz do projeto
     $ cd nome-da-pasta-do-projeto
     # Instale as dependências
