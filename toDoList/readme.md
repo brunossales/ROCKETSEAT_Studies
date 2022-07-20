@@ -23,8 +23,8 @@
 
 <div align="center">
     <h2>Veja Como ficou o projeto:</h2>
-    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif">
-        <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif"> </a>
+    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/ToDo%20List%20-%20GIF.gif">
+        <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/ToDo%20List%20-%20GIF.gif"> </a>
     </img>
     <h2>Quando tem-se tarefas cadastradas:</h2>
     <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png" width="550" height="290">
