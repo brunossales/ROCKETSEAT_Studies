@@ -1,0 +1,10 @@
+//eslint
+//npm eslint --init (criar uma configuração para a equipe, para seguir um padrão de desenvolvimento)
+//npm i eslint
+//npm i @rocketseat/eslint-config -D
+
+//npx eslint src --ext .ts,.tsx --fix (para rodar e corrigir os erros)
+
+{
+    "extends":"@rocketseat/eslint-config/react"
+}
