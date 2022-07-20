@@ -8,7 +8,19 @@
         <li><h3>Usando React, TypeScript e SASS</h3></li> 
     </ul>
 </div>
-<hr>
+
+- # NPM 
+    ```bash
+    # Faça o downloald do projeto no seu computador
+    $ git clone https://github.com/brunossales/WEB_2022.1
+    # Entre na pasta raiz do projeto
+    $ cd nome-da-pasta-do-projeto
+    # Instale as dependências
+    $ yarn install
+    # Tudo pronto para iniciar o servidor
+    $ yarn start
+    ```
+
 <div align="center">
     <h2>Veja Como ficou o projeto:</h2>
     <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif">
