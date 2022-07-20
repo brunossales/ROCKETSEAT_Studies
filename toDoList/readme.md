@@ -15,11 +15,11 @@
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif"> </a>
     </img>
     <h2>Quando tem-se tarefas cadastradas:</h2>
-    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png" width="300" height="300">
+    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png" width="550" height="290">
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png"> </a>
     </img>
     <h2>Quando não tem tarefas cadastradas:</h2>
-    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png" width="300" height="300">
+    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png" width="550" height="290">
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png"> </a>
     </img>
 </div>
