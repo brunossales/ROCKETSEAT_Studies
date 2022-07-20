@@ -14,14 +14,12 @@
     <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif">
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/Ignite%20Feed%20-%20Gif.gif"> </a>
     </img>
-    <hr>
     <h2>Quando tem-se tarefas cadastradas:</h2>
-    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png">
+    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png" width="300" height="300">
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/toDoListAll.png"> </a>
     </img>
-    <hr>
     <h2>Quando não tem tarefas cadastradas:</h2>
-    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png">
+    <img src="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png" width="300" height="300">
         <a href="https://github.com/brunossales/ROCKETSEAT_Studies/blob/main/imgs/todoListNone.png"> </a>
     </img>
 </div>
